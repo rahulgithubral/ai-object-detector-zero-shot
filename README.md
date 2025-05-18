@@ -27,7 +27,9 @@ Copy
 Edit
 text_labels = ["matchbox and matchsticks", "pc monitor", "lion", "drone", "light bulb", 
                ]
+               
 📹 Input
+
 Drop your input video as input_vid.avi in the working directory.
 
 📤 Output
