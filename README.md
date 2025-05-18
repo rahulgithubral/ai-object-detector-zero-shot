@@ -33,6 +33,7 @@ text_labels = ["matchbox and matchsticks", "pc monitor", "lion", "drone", "light
 Drop your input video as input_vid.avi in the working directory.
 
 📤 Output
+
 output_with_owlvit.avi
 
 output_with_clip.avi
