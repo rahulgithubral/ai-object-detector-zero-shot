@@ -22,9 +22,8 @@ OWL-ViT detects and localizes objects in frames based on natural language prompt
 CLIP scores each frame for similarity with given text prompts and annotates with the top match.
 
 🧠 Example Labels
-python
-Copy
-Edit
+
+
 text_labels = ["matchbox and matchsticks", "pc monitor", "lion", "drone", "light bulb", 
                ]
                
