@@ -1,38 +1,43 @@
-**🔍 Object Detection with OWL-ViT and CLIP**
+# 🔍 AI Object Detection using OWL-ViT and CLIP
 
-This notebook compares object detection using OWL-ViT and CLIP on a video file. OWL-ViT provides grounded object detection, while CLIP identifies the most similar text label for each frame.
+This project performs zero-shot object detection on video files using OWL-ViT and CLIP models. It compares grounded object localization (OWL-ViT) with semantic frame classification (CLIP).
 
-**📦 Dependencies**
-transformers
+## 📦 Dependencies
 
-clip-by-openai
+- transformers  
+- clip-by-openai  
+- torch  
+- opencv-python  
+- matplotlib  
+- Pillow  
 
-torch
+Install all with:
 
-opencv-python
+```bash
+pip install -r requirements.txt
+🚀 How It Works
+OWL-ViT: Detects and localizes objects in each video frame using natural language prompts
 
-matplotlib
-
-Pillow
-
-**How It Works:**
-
-OWL-ViT detects and localizes objects in frames based on natural language prompts.
-
-CLIP scores each frame for similarity with given text prompts and annotates with the top match.
+CLIP: Matches each frame with the most similar text label based on image-text similarity
 
 🧠 Example Labels
+python
+Copy
+Edit
+text_labels = ["matchbox and matchsticks", "pc monitor", "lion", "drone", "light bulb"]
+You can change or add more labels in the script.
 
+🎬 Input
+Place your input video file in the project folder and rename it as:
 
-text_labels = ["matchbox and matchsticks", "pc monitor", "lion", "drone", "light bulb", 
-               ]
-               
-📹 Input
-
-Drop your input video as input_vid.avi in the working directory.
-
+Copy
+Edit
+input_vid.avi
 📤 Output
+The following output files will be generated:
 
-output_with_owlvit.avi
-
-output_with_clip.avi
+css
+Copy
+Edit
+output_with_owlvit.avi   → OWL-ViT detection
+output_with_clip.avi     → CLIP classification
